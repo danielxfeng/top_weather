@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="index.php">About</a></li>
-                <li><a href="index.php">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Home</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fancy Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <a href="/">
+          <h1>Fancy Weather</h1>
+        </a>
+      </header>
+      <main>
+        <section id="search">
+          <form id="search_form" action="/search">
+            <input type="text" name="city" placeholder="Enter city name" />
+            <button type="submit">
+              <img
+                id="search_btn_img"
+                src="./images/search.png"
+                alt="search button"
+              />
+            </button>
+          </form>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2020</p>
-    </footer>
-</body>
+        <div id="weather">
+          <section id="welcome">
+            <h2>Welcome to Fancy Weather</h2>
+            <p>Please input the city name into the search bar, then press the search icon.</p>
+            <p><b>Enjoy!</b></p>
+        </section>
+      </main>
+      <footer>
+        <p>
+          &copy; 2024
+          <a
+            href="https://github.com/danielxfeng/top_weather"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Fancy Weather</a
+          >
+        </p>
+        <p>created by <em>Daniel</em></p>
+        <a
+          href="https://www.freepik.com/search"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Icon by prinda895</a>
+      </footer>
+    </div>
+  </body>
 </html>
