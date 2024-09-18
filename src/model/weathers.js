@@ -11,8 +11,8 @@ const Weathers = () => {
     return {
       address: _address,
       curr: _curr,
-      today: _today,
-      forecast: _forecast,
+      today: _today.get(),
+      forecast: _forecast.map((day) => day.get()),
     };
   };
 
@@ -22,7 +22,7 @@ const Weathers = () => {
       throw new Error("No address found.");
     }
     _address = data.resolvedAddress;
-    const length = data.days.length;
+    let length = data.days.length;
     if (length <= 0) {
       throw new Error("No weather data found.");
     }

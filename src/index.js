@@ -8,6 +8,4 @@ form.addEventListener("submit", function (e) {
   console.log(city);
 });
 
-
-
-
+controller.performSearch("New York");

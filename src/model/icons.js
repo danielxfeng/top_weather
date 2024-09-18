@@ -2,6 +2,11 @@
 const Icons = () => {
     let _icons = new Map();
 
+    // Init the icons.
+    const init = () => {
+        _icons = new Map();
+    }
+
     // Return all icons.
     const get = () => {
         return _icons;
@@ -44,7 +49,7 @@ const Icons = () => {
 
     deserialize();
 
-    return { get, getIcon, exist, add, serialize };
+    return { init, get, getIcon, exist, add, serialize };
 }
 
 const icons = Icons();
