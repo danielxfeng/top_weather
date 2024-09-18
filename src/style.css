@@ -87,7 +87,7 @@ button {
     padding: 40px;
 }
 
-#welcome {
+.msg {
     padding: 20px;
     background-color: #cffafe;
     border-radius: 20px;
