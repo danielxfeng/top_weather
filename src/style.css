@@ -175,3 +175,10 @@ footer a, footer a:active, footer a:visited {
     color: inherit;
     text-decoration: underline;
 }
+
+.attribution_policy {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
