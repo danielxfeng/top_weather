@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # password
-password.json
+api_key.json
