@@ -5,7 +5,10 @@ let form = document.getElementById("search_form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   let city= e.target.elements["city"].value;
-  console.log(city);
+  controller.performSearch(city);
 });
 
-controller.performSearch("New York");
+let btn = document.getElementById("change_units");
+btn.addEventListener("click", function () {
+  controller.changeUnit();
+});

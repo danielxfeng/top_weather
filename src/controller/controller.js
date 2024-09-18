@@ -38,7 +38,11 @@ const Controller = () => {
     icons.add(key, value);
   };
 
-  return { performSearch };
+  const changeUnit = () => {
+    uiController.changeUnits();
+  };
+
+  return { performSearch, changeUnit };
 };
 
 const controller = Controller();
